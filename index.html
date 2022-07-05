@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google!</title>
+    <style>
+      /* ############# default css start #############*/
+      html,
+      body,
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      /* ############# default css end #############*/
+      /* ############# header start #############*/
+      header nav #logo {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      /* ############# header end #############*/
+      /* ############# main start #############*/
+      main {
+        padding: 0 5%;
+      }
+      /* ############# search content start #############*/
+      main section#search-content {
+        padding: 30px 0;
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 18px;
+        font-family: "Courier New", Courier, "Courier New", Courier, monospace;
+      }
+      main section form input[type="text"] {
+        width: 300px;
+        margin-top: 2px;
+      }
+      main section form .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        margin-top: 10px;
+      }
+      /* ############# search content start #############*/
+      /*#############  bottoms Start ############# */
+      main #bottoms {
+        padding: 10px;
+        background-color: rgb(209, 248, 248);
+        display: flex;
+        justify-content: space-between;
+      }
+      main #bottoms .bottom-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: calc(100% / 3);
+      }
+      /*#############  bottoms end ############# */
+      /* ############# main start #############*/
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="logo">
+          <img
+            src="https://web.archive.org/web/19981202230410im_/http://www.google.com/google.jpg"
+            alt="Google"
+          />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--######################## SEARCH CONTENT ########################-->
+      <section id="search-content">
+        <h6>Search the web using Google!</h6>
+        <form action="GET" class="search-form">
+          <input type="text" name="search" id="search" placeholder="serach" />
+          <div class="buttons">
+            <button type="submit">Google Search</button>
+            <button type="submit">I'm feeling lucky</button>
+          </div>
+        </form>
+      </section>
+      <!--######################## SEARCH CONTENT ########################-->
+      <!--######################## BOTTOMS ########################-->
+      <section id="bottoms">
+        <div class="bottom-item">
+          <h6 class="title">Special Searches</h6>
+          <ul>
+            <li><a href="#">Stantford Search</a></li>
+            <li><a href="#">Linux Search</a></li>
+          </ul>
+        </div>
+        <div class="bottom-item">
+          <h6 class="title">Help!</h6>
+          <ul>
+            <li><a href="#">About Google</a></li>
+            <li><a href="#">Company Info</a></li>
+            <li><a href="#">Google Logos</a></li>
+          </ul>
+        </div>
+        <div class="bottom-item">
+          <h6 class="title">Get Google! updates monthly: !</h6>
+          <form action="#">
+            <input type="text" placeholder="email Content" />
+          </form>
+        </div>
+      </section>
+      <!--######################## BOTTOMS ########################-->
+    </main>
+    <!--######################## FOOTER ########################-->
+    <footer>&copy; Google 1998</footer>
+    <!--######################## FOOTER ########################-->
+  </body>
+</html>
